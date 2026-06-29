@@ -1,0 +1,46 @@
+# ==========================================
+# Bare-Metal STM32 Project .gitignore
+# ==========================================
+
+# 1. macOS Hidden Files
+# Prevents Mac folder settings from cluttering the repo
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# 2. STM32CubeIDE / Eclipse Build Directories
+# Never commit the compiled output folders, let others build it themselves
+Debug/
+Release/
+build/
+*.elf.launch
+
+# 3. Compiled Binaries & Build Artifacts
+# Ignores the heavy machine code and memory maps
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.d
+*.su
+*.list
+
+# 4. STM32CubeMX Backups
+# Ignores the automatic backups CubeMX makes when generating code
+*.bak
+*.ioc~
+
+# 5. Node-RED / NPM (If applicable locally)
+# Ignores local node modules or log files from dashboard testing
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# 6. Eclipse IDE Metadata
+# Ignores your personal workspace metadata (but keeps the project config files)
+.metadata/
+.settings/
